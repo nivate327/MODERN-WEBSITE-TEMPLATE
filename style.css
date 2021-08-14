@@ -45,7 +45,7 @@ li{
 {
   width:100%;
   height: 40vh;
-  background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('laptopSet.jpg');
+  background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('laptopset.jpg');
   clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0% 77%, 0 0);
   z-index: 1;
   background-size: 100% 100%;
