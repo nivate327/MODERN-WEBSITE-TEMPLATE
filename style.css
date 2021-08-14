@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --main-color:#74CDFA;
+}
+
+body {
+    font-size: 15pt;
+}
+
+
+
+p{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+
+/* Navbar Section */
+.nav-item
+{
+  margin: 0 .8rem !important;
+}
+
+.header
+{
+  width:100%;
+  height: 40vh;
+  background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('laptopSet.jpg');
+  clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0% 77%, 0 0);
+  z-index: 1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media(max-width:360px)
+{
+  .header
+  {
+   width:100%;
+   height: 90vh !important;
+  }
+  
+  .center-div
+  {
+   margin-top: 6.5rem; 
+  }
+
+  
+}
+
+@media(max-width:720px)
+{
+  .header
+  {
+   width:100%;
+   height: 100vh;
+  }
+  
+  .center-div
+  {
+    padding-top: 1.4rem !important;
+  }
+
+}
+
+.header::before{
+    content:"";
+    position: absolute;
+    top:0%;
+    left:0%;
+    bottom: 0%;
+    right: 0%;
+    opacity: .4;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    z-index: -1;
+}
+
+
+.navbar
+{
+  position:relative !important;
+}
+
+.navbar::before{
+  content:"";
+  position: absolute;
+  top:0%;
+  left:0%;
+  bottom: 0%;
+  right: 0%;
+  opacity: .1;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+  z-index: -1;
+}
+
+
+.nav-link{
+  color:#fff !important;
+} 
+
+
+/* hero section */
+
+.hero-section
+{
+  position: relative;
+  width:100%;
+  height:inherit;
+  color:white;
+  text-align: center;
+}
+
+.center-div
+{
+  width: 100%;
+  height:inherit;
+  padding-top: 12rem;
+}
+
+.btnColor{
+  background: transparent !important;  
+  color: white !important;
+  border: 2px solid white;
+  padding: .5rem 2rem !important;
+  margin: 0 0.8rem;
+  border-radius:30px;
+}
+
+.btnAbout
+{
+  padding: .5rem 2.4rem !important;
+  
+}
+
+.btn:hover{
+  background: white !important;
+  color: black !important;
+  box-shadow: none;
+}
+
+.center-div p{
+  margin-bottom: 1.7rem;
+  margin-top: 1rem;
+}
+
+.navbar-toggler-icon
+{
+  color: white !important;
+}
+
+/* hero section end */
+
+
+/* service section */
+
+.cardService{
+    transition: transform 0.3s ease-in-out;
+  border:none !important;
+  border-radius: 10px;
+}
+
+.cardService:hover{
+ transform: translateY(-10px); 
+ box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.icon
+{
+  color:#74CDFA;
+}
+
+.card-text
+{
+  color:gray !important;
+  margin:0 !important;
+}
+
+.service-section
+{
+  width:100%;
+  height:auto;
+}
+
+.margin
+{
+  padding: 5rem 0 6.7rem 0 !important;
+}
+
+
+/* offer section start */
+.offerSection
+{
+  background: #F5F5FA;
+  padding: 2rem 0;
+}
+
+.colorP
+{
+  color:gray;
+}
+
+.colorHead
+{
+  color:var(--main-color);
+}
+
+
+.colCenter
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.iconDiv
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.field
+{
+  font-size: 1.5rem;
+}
+
+.fieldText
+{
+  font-size: .7rem;
+}
+
+.names h3
+{
+  font-size: 1.5rem;
+}
+
+.progress
+{
+  height:.7rem;
+}
+
+
+/* counter section */
+.counter{
+  margin: 5em 0 !important;
+}
+
+.counter div{
+  margin-top: 2rem !important;
+}
+
+.counter .container div > p
+{
+  color:gray !important;
+}
+
+
+.card-body li{
+  margin: .5rem 0 !important;
+}
+
+.btnPurchese
+{
+  background: transparent !important;
+  color: var(--main-color) !important;
+  border: 2px solid var(--main-color);
+  padding: .5rem 2rem !important;
+  margin: 0 0.8rem;
+  border-radius:30px;
+  display: block;
+  margin: auto !important;
+}
+
+
+
+.pricing
+{
+  position: relative; 
+  padding: 3rem 0 !important;
+  
+}
+
+.pricing::before{
+   content:"";
+   position: absolute;
+   top:0%;
+   left:0%;
+   bottom: 0%;
+   right: 0%;
+   background: linear-gradient(165deg, #74CDFA 55%, #fff 0%);
+   z-index: -1;
+}
+
+
+.money
+{
+  font-size: 2rem !important;
+}
+
+.pricingCard{
+  transition: transform 0.2s;
+}
+
+.pricingCard:hover{
+  transform: translateY(-10px);
+}
+
+.btnPurchese:hover
+{
+  background: var(--main-color) !important;
+  color:#fff !important;
+  box-shadow: 0 0 10px var(--main-color) !important;
+}
+
+
+.pricingCard:hover .card-header, .pricingCard:hover .money
+{
+  color:var(--main-color) !important;
+}
+
+
+.card-footer
+{
+  padding: 1.5rem 0 !important;
+  background: #fff !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.card-header h2
+{
+ margin-top: 1rem !important; 
+}
+
+
+/*  clients section */
+.clients
+{
+  width: 100%;
+  background: #F5F5FA;
+}
+
+.nameOfClients
+{
+  margin-top: .5rem;
+  font-size: 1.8rem !important;
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.logo
+{
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: block;
+  margin: auto;
+}
+
+
+.carousel-indicators
+{
+  position: absolute !important;
+  right:0 !important;
+  bottom: -60px !important;
+}
+
+.carousel-indicators li
+{
+  background:#B6E3E2 !important;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+}
+
+.carousel-indicators .active
+{
+  background: #000 !important;
+}
+
+
+/*  clients section end */
+
+
+/*  contact section start */
+.ContactBtn
+{
+  border-radius: 30px;
+  background: transparent;
+  color:var(--main-color);
+  display: block;
+  margin: auto;
+}
+
+.contactUs
+{
+  position: relative;  
+}
+
+.contactUs::before
+{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  background: linear-gradient(330deg, var(--main-color) 55%, #fff 0%);
+  z-index: -1;
+}
+
+form:hover .ContactBtn
+{
+ background: #fff;
+ color:var(--main-color);
+}
+
+
+.ContactBtn:hover
+{
+  color:var(--main-color) !important;
+  box-shadow: none !important;
+}
+
+/* newsletter start */
+.input-news
+{
+  min-width: 100px !important;
+  border-radius: 30px 0 0 30px !important;
+}
+
+
+.btn-news
+{
+   min-width: 100px !important;
+   border-radius: 0 30px 30px 0 !important; 
+   border:none !important;
+   background: var(--main-color);
+   color: #fff;
+}
+
+/* newsletter end */
+
+.footer
+{
+  background: var(--main-color);
+}
+
+.bar li a{
+  color:white;
+  text-decoration: none;
+}
+
+.bar li a:hover{
+  text-decoration: none;
+}
+
+
+.scrolltop .scrolltopbtn
+{
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem; 
+  background: #fff;
+  color: var(--main-color);
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.fa-arrow-up
+{
+  color: var(--main-color) !important;
+}
+
+.scrolltopbtn:hover .fa-arrow-up
+{
+  background: #fff;
+  color: var(--main-color) !important;
+}
+
+.navbar-toggler:hover
+{
+  outline: none;
+  border:1px sold var(--main-color);
+}
+
+
+/* responsive Design */
+@media(max-width:360px)
+{
+  
+  .center-div h1
+  {
+    font-size: 1.7rem !important;
+  }
+  
+  
+  
+ .cardService .card-body h2
+ {
+   font-size: 1.5rem !important;
+ }
+ 
+ .cardService .card-body p
+ {
+   font-size: 1rem !important;
+ }
+
+ .offerSection div h1
+ {
+   font-size: 2rem !important;
+ }
+ 
+ .offerSection div p
+ {
+   font-size: 1rem !important;
+ }
+ 
+ .names h3
+ {
+   font-size: 1.2rem !important;
+ }
+ 
+ .field
+ {
+   font-size: 1.1rem !important;
+ }
+ 
+ .filedText
+ {
+   font-size: .8rem !important;
+ }
+ 
+ .offerIcon
+ {
+  font-size: 1.8rem !important; 
+ }
+ 
+ .counter h1
+ {
+  font-size: 1.8rem !important; 
+ }
+ 
+ .counterPart div h2
+ {
+  font-size: 1.6rem !important; 
+ }
+ 
+ .counterPart div p
+ {
+  font-size: 1.2rem !important; 
+ }
+ 
+ 
+ .pricingPart h1
+ {
+   font-size: 1.8rem !important; 
+ }
+ 
+ .pricingCard .card-header h2
+ {
+  font-size: 1.5rem !important;
+ }
+ 
+ .pricingCard .card-body li
+ {
+  font-size: 1rem !important;
+ }
+ 
+ .carousel-indicators li
+{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+}
+ 
+ .clients h1
+ {
+  font-size: 1.8rem !important;  
+ }
+ 
+ .clientsText
+ {
+  font-size: 1rem !important; 
+ }
+ 
+ .nameOfClients{
+   font-size: 1.4rem !important; 
+ }
+ 
+ .skils
+ {
+   font-size: 1.1rem !important; 
+ }
+ 
+ .contactUs h1
+ {
+   font-size: 1.8rem !important;  
+ }
+ 
+ .contactUs p
+ {
+   font-size: 1rem !important;  
+ }
+ 
+ ::placeholder
+ {
+   font-size: .9rem !important;
+ }
+ 
+ .newsletterPart h1
+ {
+    font-size: 1.8rem !important;  
+ }
+ 
+ .footerHead
+ {
+   font-size: 1.5rem !important; 
+ }
+ 
+ .about-text
+ {
+  font-size: 1rem !important;   
+ }
+ 
+ .bar li{
+   font-size: 1rem !important;   
+ }
+ 
+ .footerP
+ {
+   font-size: 1rem !important;   
+ }
+}
+
+@media(max-width:720px)
+{
+  
+  .center-div h1
+  {
+    font-size: 1.7rem !important;
+  }
+  
+  
+  
+ .cardService .card-body h2
+ {
+   font-size: 1.5rem !important;
+ }
+ 
+ .cardService .card-body p
+ {
+   font-size: 1rem !important;
+ }
+
+ .offerSection div h1
+ {
+   font-size: 2rem !important;
+ }
+ 
+ .offerSection div p
+ {
+   font-size: 1rem !important;
+ }
+ 
+ .names h3
+ {
+   font-size: 1.2rem !important;
+ }
+ 
+ .field
+ {
+   font-size: 1.1rem !important;
+ }
+ 
+ .filedText
+ {
+   font-size: .8rem !important;
+ }
+ 
+ .offerIcon
+ {
+  font-size: 1.8rem !important; 
+ }
+ 
+ .counter h1
+ {
+  font-size: 1.8rem !important; 
+ }
+ 
+ .counterPart div h2
+ {
+  font-size: 1.6rem !important; 
+ }
+ 
+ .counterPart div p
+ {
+  font-size: 1.2rem !important; 
+ }
+ 
+ 
+ .pricingPart h1
+ {
+   font-size: 1.8rem !important; 
+ }
+ 
+ .pricingCard .card-header h2
+ {
+  font-size: 1.5rem !important;
+ }
+ 
+ .pricingCard .card-body li
+ {
+  font-size: 1rem !important;
+ }
+ 
+ .carousel-indicators li
+{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+}
+ 
+ .clients h1
+ {
+  font-size: 1.8rem !important;  
+ }
+ 
+ .clientsText
+ {
+  font-size: 1rem !important; 
+ }
+ 
+ .nameOfClients{
+   font-size: 1.4rem !important; 
+ }
+ 
+ .skils
+ {
+   font-size: 1.1rem !important; 
+ }
+ 
+ .contactUs h1
+ {
+   font-size: 1.8rem !important;  
+ }
+ 
+ .contactUs p
+ {
+   font-size: 1rem !important;  
+ }
+ 
+ ::placeholder
+ {
+   font-size: .9rem !important;
+ }
+ 
+ .newsletterPart h1
+ {
+    font-size: 1.8rem !important;  
+ }
+ 
+ .footerHead
+ {
+   font-size: 1.5rem !important; 
+ }
+ 
+ .about-text
+ {
+  font-size: 1rem !important;   
+ }
+ 
+ .bar li{
+   font-size: 1rem !important;   
+ }
+ 
+ .footerP
+ {
+   font-size: 1rem !important;   
+ }
+}

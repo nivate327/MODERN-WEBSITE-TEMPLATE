@@ -1,0 +1,206 @@
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav text-center ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Service</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+    
+  </div>
+  
+  
+   <nav class="navbar navbar-expand-sm"></nav>
+      <div class="container">
+    <a class="navbar-brand text-white" href="#">Modern</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+  
+  </div>
+  </nav>
+  
+  
+  
+  
+/* Navbar Section */
+.nav-item
+{
+  margin: 0 .8rem !important;
+}
+
+.header
+{
+  width:100%;
+  height: 40vh;
+  background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('laptopSet.jpg');
+  clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0% 77%, 0 0);
+  z-index: 1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media(max-width:360px)
+{
+  .header
+  {
+   width:100%;
+   height: 90vh !important;
+  }
+  
+  .center-div
+  {
+   margin-top: 6.5rem; 
+  }
+
+  
+}
+
+@media(max-width:720px)
+{
+  .header
+  {
+   width:100%;
+   height: 100vh;
+  }
+  
+  .center-div
+  {
+    padding-top: 1.4rem !important;
+  }
+
+}
+
+.header::before{
+    content:"";
+    position: absolute;
+    top:0%;
+    left:0%;
+    bottom: 0%;
+    right: 0%;
+    opacity: .4;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    z-index: -1;
+}
+/*
+.navbar
+{
+  position:relative !important;
+}
+
+.navbar::before{
+  content:"";
+  position: absolute;
+  top:0%;
+  left:0%;
+  bottom: 0%;
+  right: 0%;
+  opacity: .1;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+  z-index: -1;
+}
+
+
+.nav-link{
+  color:#fff !important;
+} 
+
+
+/* hero section */
+
+.hero-section
+{
+  position: relative;
+  width:100%;
+  height:inherit;
+  color:white;
+  text-align: center;
+}
+
+.center-div
+{
+  width: 100%;
+  height:inherit;
+  padding-top: 12rem;
+}
+
+.btnColor{
+  background: transparent !important;  
+  color: white !important;
+  border: 2px solid white;
+  padding: .5rem 2rem !important;
+  margin: 0 0.8rem;
+  border-radius:30px;
+}
+
+.btnAbout
+{
+  padding: .5rem 2.4rem !important;
+  
+}
+
+.btn:hover{
+  background: white !important;
+  color: black !important;
+  box-shadow: none;
+}
+
+.center-div p{
+  margin-bottom: 1.7rem;
+  margin-top: 1rem;
+}
+
+.navbar-toggler-icon
+{
+  color: white !important;
+}
+
+/* hero section end */
+
+
+        <div class="row d-flex justify-content-center mx-3">
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card pt-4 mt-4">
+            <a href=""><img class="img-fluid logo" src="logo.jpg" alt="logo" /></a>
+            <div class="card-body pb-4">
+              <p class="card-text text-center">lorem skdjfk jdskf  djsfkj dkjfkjkjsdf kjsdkfj djsfk dkjfkdj sdkjfk </p>
+                <h2 class="text-center nameOfClients">Rohan Nivate</h2>
+                <p class="text-center skils">Web Developer</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card pt-4 mt-4">
+            <a href=""><img class="img-fluid logo" src="logo.jpg" alt="logo" /></a>
+            <div class="card-body pb-4">
+              <p class="card-text text-center">lorem skdjfk jdskf djsfkj dkjfkjkjsdf kjsdkfj djsfk dkjfkdj sdkjfk </p>
+              <h2 class="text-center nameOfClients">Rohan Nivate</h2>
+            <p class="text-center skils">Web Developer</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card pt-4 mt-4">
+            <a href=""><img class="img-fluid logo" src="logo.jpg" alt="logo" /></a>
+            <div class="card-body pb-4">
+              <p class="card-text text-center">lorem skdjfk jdskf djsfkj dkjfkjkjsdf kjsdkfj djsfk dkjfkdj sdkjfk </p>
+              <h2 class="text-center nameOfClients">Rohan Nivate</h2>
+              <p class="text-center skils">Web Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
